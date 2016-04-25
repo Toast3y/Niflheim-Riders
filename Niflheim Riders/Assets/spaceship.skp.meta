@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 521ba41278e28c140862e23863310afc
+timeCreated: 1460726933
+licenseType: Free
+SketchUpImporter:
+  generateBackFace: 0
+  mergeCoplanarFaces: 0
+  selectedNodes: 000000000100000002000000030000000400000005000000060000000700000008000000090000000a0000000b0000000c0000000d0000000e0000000f000000100000001100000012000000130000001400000015000000160000001700000018000000190000001a0000001b0000001c0000001d000000
+  assetHash:
+    serializedVersion: 2
+    Hash: 87594a9075b6b1d60ae07b8b45782c8d
+  longitude: 5.917
+  latitude: 51.983
+  northCorrection: -0
+  fileUnit: 0
+  sketchUpImportData:
+    defaultCamera:
+      position: {x: -8.280564, y: 7.1615148, z: 6.86303}
+      lookAt: {x: -1.373071, y: 2.549428, z: 0.97678804}
+      up: {x: 0.34483233, y: 0.89148355, z: -0.29384995}
+      fov: 30
+      aspectRatio: 0
+      orthoSize: 1
+      isPerspective: 1
+    scenes:
+    - camera:
+        position: {x: -8.280564, y: 7.1615148, z: 6.86303}
+        lookAt: {x: -1.373071, y: 2.549428, z: 0.97678804}
+        up: {x: 0.34483233, y: 0.89148355, z: -0.29384995}
+        fov: 30
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Home view
+    - camera:
+        position: {x: 0.0139999995, y: 13.58662, z: 0}
+        lookAt: {x: 0.0139999995, y: 1.9679524, z: 0}
+        up: {x: 0, y: 0, z: 1}
+        fov: 45
+        aspectRatio: 0
+        orthoSize: 214.16345
+        isPerspective: 0
+      name: Top view
+    - camera:
+        position: {x: 0.0139999995, y: 1.9679524, z: -11.618668}
+        lookAt: {x: 0.0139999995, y: 1.9679524, z: 0}
+        up: {x: 0, y: 1, z: 0}
+        fov: 45
+        aspectRatio: 0
+        orthoSize: 214.16345
+        isPerspective: 0
+      name: Side view
+    - camera:
+        position: {x: -9.327813, y: 1.9668739, z: 0.053373855}
+        lookAt: {x: 0.0139999995, y: 1.9668739, z: 0.053373855}
+        up: {x: 0, y: 1, z: 0}
+        fov: 45
+        aspectRatio: 0
+        orthoSize: 143.68369
+        isPerspective: 0
+      name: Front view
+    - camera:
+        position: {x: 9.355966, y: 1.9679524, z: 0}
+        lookAt: {x: 0.0139999995, y: 1.9679524, z: 0}
+        up: {x: 0, y: 1, z: 0}
+        fov: 45
+        aspectRatio: 0
+        orthoSize: 143.68369
+        isPerspective: 0
+      name: Back view
+    - camera:
+        position: {x: -8.586778, y: 3.5265307, z: -2.8528233}
+        lookAt: {x: -0.0047121937, y: 1.5932828, z: 0.29090565}
+        up: {x: 0.19431539, y: 0.97835314, z: 0.0711804}
+        fov: 30
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Front perspective
+    - camera:
+        position: {x: 9.1581, y: 7.3122234, z: -6.3989544}
+        lookAt: {x: 2.8807824, y: 2.6544561, z: -1.2830172}
+        up: {x: -0.38648808, y: 0.8668406, z: 0.31498307}
+        fov: 30
+        aspectRatio: 0
+        orthoSize: 1
+        isPerspective: 1
+      name: Back perspective
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: 01
+    100002: 01 1
+    100004: 01 2
+    100006: 01 3
+    100008: 02
+    100010: 02 1
+    100012: 02 2
+    100014: 02 3
+    100016: 03
+    100018: 03 1
+    100020: Group 1
+    100022: Group 11
+    100024: Group 2
+    100026: JW-B28
+    100028: JW-B28 1
+    100030: //RootNode
+    100032: WARNING AIRLOCK!
+    400000: 01
+    400002: 01 1
+    400004: 01 2
+    400006: 01 3
+    400008: 02
+    400010: 02 1
+    400012: 02 2
+    400014: 02 3
+    400016: 03
+    400018: 03 1
+    400020: Group 1
+    400022: Group 11
+    400024: Group 2
+    400026: JW-B28
+    400028: JW-B28 1
+    400030: //RootNode
+    400032: WARNING AIRLOCK!
+    2300000: 01
+    2300002: 01 1
+    2300004: 01 2
+    2300006: 01 3
+    2300008: 02
+    2300010: 02 1
+    2300012: 02 2
+    2300014: 02 3
+    2300016: 03
+    2300018: 03 1
+    2300020: JW-B28
+    2300022: JW-B28 1
+    2300024: WARNING AIRLOCK!
+    3300000: 01
+    3300002: 01 1
+    3300004: 01 2
+    3300006: 01 3
+    3300008: 02
+    3300010: 02 1
+    3300012: 02 2
+    3300014: 02 3
+    3300016: 03
+    3300018: 03 1
+    3300020: JW-B28
+    3300022: JW-B28 1
+    3300024: WARNING AIRLOCK!
+    4300000: Mesh 02
+    4300002: Mesh 01
+    4300004: Mesh JW-B28
+    4300006: Mesh WARNING AIRLOCK!
+    4300008: Mesh 03
+  materials:
+    importMaterials: 1
+    materialName: 2
+    materialSearch: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.0254
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
