@@ -18,34 +18,34 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: {x: 0.5, y: -0.89, z: 1}
-        inSlope: {x: 0, y: -0.0066666603, z: 0}
-        outSlope: {x: 0, y: -0.0066666603, z: 0}
+        value: {x: -1, y: -0.9, z: 0.50000036}
+        inSlope: {x: 0, y: 0.0033333302, z: 0}
+        outSlope: {x: 0, y: 0.0033333302, z: 0}
         tangentMode: 0
       - time: 1.5
-        value: {x: 0.5, y: -0.9, z: 1}
+        value: {x: -1, y: -0.895, z: 0.50000036}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 3
-        value: {x: 0.5, y: -0.89, z: 1}
-        inSlope: {x: 0, y: 0.0066666603, z: 0}
-        outSlope: {x: 0, y: 0.0066666603, z: 0}
+        value: {x: -1, y: -0.9, z: 0.50000036}
+        inSlope: {x: 0, y: -0.0033333302, z: 0}
+        outSlope: {x: 0, y: -0.0033333302, z: 0}
         tangentMode: 0
       - time: 4.5
-        value: {x: 0.5, y: -0.88, z: 1}
+        value: {x: -1, y: -0.905, z: 0.50000036}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
       - time: 6
-        value: {x: 0.5, y: -0.89, z: 1}
-        inSlope: {x: 0, y: -0.0066666603, z: 0}
-        outSlope: {x: 0, y: -0.0066666603, z: 0}
+        value: {x: -1, y: -0.9, z: 0.50000036}
+        inSlope: {x: 0, y: 0.0033333302, z: 0}
+        outSlope: {x: 0, y: 0.0033333302, z: 0}
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    path: Main Camera (1)/VOSSCOCKPIT
+    path: VOSSCOCKPIT
   m_ScaleCurves: []
   m_FloatCurves: []
   m_PPtrCurves: []
@@ -56,7 +56,7 @@ AnimationClip:
     m_Extent: {x: 0, y: 0, z: 0}
   m_ClipBindingConstant:
     genericBindings:
-    - path: 3056859023
+    - path: 4259387097
       attribute: 1
       script: {fileID: 0}
       classID: 4
@@ -88,12 +88,12 @@ AnimationClip:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 0.5
+        value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 6
-        value: 0.5
+        value: -1
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -101,54 +101,54 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.x
-    path: Main Camera (1)/VOSSCOCKPIT
+    path: VOSSCOCKPIT
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: -0.89
-        inSlope: -0.0066666603
-        outSlope: -0.0066666603
+        value: -0.9
+        inSlope: 0.0033333302
+        outSlope: 0.0033333302
         tangentMode: 10
       - time: 1.5
-        value: -0.9
+        value: -0.895
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 3
-        value: -0.89
-        inSlope: 0.0066666603
-        outSlope: 0.0066666603
+        value: -0.9
+        inSlope: -0.0033333302
+        outSlope: -0.0033333302
         tangentMode: 10
       - time: 4.5
-        value: -0.88
+        value: -0.905
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 6
-        value: -0.89
-        inSlope: -0.0066666603
-        outSlope: -0.0066666603
+        value: -0.9
+        inSlope: 0.0033333302
+        outSlope: 0.0033333302
         tangentMode: 10
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.y
-    path: Main Camera (1)/VOSSCOCKPIT
+    path: VOSSCOCKPIT
     classID: 4
     script: {fileID: 0}
   - curve:
       serializedVersion: 2
       m_Curve:
       - time: 0
-        value: 1
+        value: 0.50000036
         inSlope: 0
         outSlope: 0
         tangentMode: 10
       - time: 6
-        value: 1
+        value: 0.50000036
         inSlope: 0
         outSlope: 0
         tangentMode: 10
@@ -156,7 +156,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalPosition.z
-    path: Main Camera (1)/VOSSCOCKPIT
+    path: VOSSCOCKPIT
     classID: 4
     script: {fileID: 0}
   m_EulerEditorCurves: []
