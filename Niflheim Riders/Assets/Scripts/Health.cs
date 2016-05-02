@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Health : MonoBehaviour {
 
+	public GameObject Explosion;
+
 	private int health = 10;
 
 	// Use this for initialization
@@ -20,6 +22,11 @@ public class Health : MonoBehaviour {
 
 		if (health <= 0) {
 			//Blow up
+			Instantiate(Explosion, gameObject.transform.position, new Quaternion (0,0,0,0));
 		}
+	}
+
+	public void SetHealth(int Health) {
+		health = Health;
 	}
 }
