@@ -27,9 +27,10 @@ GameObject:
   - 4: {fileID: 495390}
   - 114: {fileID: 11496446}
   - 65: {fileID: 6533090}
+  - 114: {fileID: 11448944}
   m_Layer: 0
   m_Name: Unionist
-  m_TagString: Untagged
+  m_TagString: unionist
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -607,6 +608,18 @@ TrailRenderer:
       rgba: 16777215
   m_MinVertexDistance: 0.1
   m_Autodestruct: 0
+--- !u!114 &11448944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 105518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0535c117eb12ebb498a15c38c8008c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
 --- !u!114 &11496446
 MonoBehaviour:
   m_ObjectHideFlags: 1

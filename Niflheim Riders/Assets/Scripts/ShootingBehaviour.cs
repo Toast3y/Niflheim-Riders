@@ -23,7 +23,11 @@ public class ShootingBehaviour : MonoBehaviour {
 
 			if (Input.GetMouseButton(0)) {
 				//Fire weapons
-				Instantiate(Laser, gameObject.transform.position, gameObject.transform.rotation);
+				//Due to model positions, fire the laser across negative objects right vector
+
+				Vector3 pos = new Vector3(gameObject.transform.position.x + offset.x, gameObject.transform.position.y + offset.y, gameObject.transform.position.z + offset.z);
+
+				Instantiate(Laser, pos, Quaternion.LookRotation(-(gameObject.transform.right)));
 				//new Vector3(gameObject.transform.position.x + offset.x, gameObject.transform.position.y + offset.y, gameObject.transform.position.z + offset.z)
             }
 

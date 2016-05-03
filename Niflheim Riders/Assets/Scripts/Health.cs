@@ -23,6 +23,12 @@ public class Health : MonoBehaviour {
 		if (health <= 0) {
 			//Blow up
 			Instantiate(Explosion, gameObject.transform.position, new Quaternion (0,0,0,0));
+
+			if (gameObject.tag == "Player") {
+				//Create a camera to observe your death
+			}
+
+			Destroy(this.gameObject);
 		}
 	}
 

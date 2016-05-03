@@ -226,9 +226,10 @@ GameObject:
   - 4: {fileID: 468684}
   - 114: {fileID: 11450518}
   - 65: {fileID: 6540382}
+  - 114: {fileID: 11481464}
   m_Layer: 0
   m_Name: Rider
-  m_TagString: Untagged
+  m_TagString: rider
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1068,6 +1069,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 1
+--- !u!114 &11481464
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 165502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0535c117eb12ebb498a15c38c8008c57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Explosion: {fileID: 100010, guid: 031d08f52af1daa4f929b85221519426, type: 2}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

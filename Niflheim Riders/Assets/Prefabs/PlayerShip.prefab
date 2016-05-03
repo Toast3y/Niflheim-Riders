@@ -287,7 +287,7 @@ GameObject:
   - 114: {fileID: 11480598}
   m_Layer: 0
   m_Name: PlayerShip
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18580,7 +18580,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 103220}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3609a4c0d3bd3bd4aaa6c0b9e645bbb1, type: 3}
   m_Name: 
@@ -18601,6 +18601,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6496435ae815c45488aca28093c8e4d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  rateOfFire: 0.6
+  Laser: {fileID: 177356, guid: 8327740a310028a4fa2da29369155e31, type: 2}
+  offset: {x: 0, y: 0, z: 0}
 --- !u!124 &12438988
 Behaviour:
   m_ObjectHideFlags: 1
