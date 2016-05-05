@@ -22,10 +22,15 @@ public class Health : MonoBehaviour {
 
 		if (health <= 0) {
 			//Blow up
-			Instantiate(Explosion, gameObject.transform.position, new Quaternion (0,0,0,0));
+			Instantiate(Explosion, gameObject.transform.position, new Quaternion(0, 0, 0, 0));
 
 			if (gameObject.tag == "Player") {
 				//Create a camera to observe your death
+			}
+
+			if (gameObject.GetComponent<CommanderBehaviour>() != null) {
+				//Trigger a commander death: Check if each extra fleet member will panic or rally
+				gameObject.GetComponent<CommanderBehaviour>().CommanderDeath();
 			}
 
 			Destroy(this.gameObject);

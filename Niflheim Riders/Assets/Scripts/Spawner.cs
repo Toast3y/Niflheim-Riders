@@ -27,6 +27,8 @@ public class Spawner : MonoBehaviour {
 
 	IEnumerator SpawnSquadron(float seconds) {
 		//Spawn reinforcements every few seconds.
+		GameObject newCommander = null;
+
 		while (true) {
 
 			for (int i = 0; i < Random.Range(2, 7); i++) {
@@ -34,10 +36,14 @@ public class Spawner : MonoBehaviour {
 
 				//If this is the first spawn, make it the squadron commander
 				if (i == 0) {
-
+					newShip.AddComponent<CommanderBehaviour>();
+					newShip.GetComponent<FighterStateMachine>().commander = newShip;
+					newShip.GetComponent<CommanderBehaviour>().AddSquadMember(newShip);
+					newCommander = newShip;
 				}
 				else {
-
+					newShip.GetComponent<FighterStateMachine>().commander = newCommander;
+					newCommander.GetComponent<CommanderBehaviour>().AddSquadMember(newShip);
 				}
 			}
 			

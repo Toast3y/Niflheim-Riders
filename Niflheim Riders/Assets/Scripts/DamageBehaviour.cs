@@ -19,6 +19,8 @@ public class DamageBehaviour : MonoBehaviour {
 		//If it hits an npc ship, damage them.
 		//Else, handle player hits separately.
 
+		Debug.Log("Object hit");
+
 		if (collision.gameObject.tag == "unionist" || collision.gameObject.tag == "rider") {
 			collision.gameObject.GetComponent<Health>().LoseHealth();
 			Destroy(this.gameObject);
