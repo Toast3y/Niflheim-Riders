@@ -3,12 +3,15 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class FighterStateMachine : MonoBehaviour {
-	//State machine that swaps between 
+	//State machine that governs each manner in which the fighter works.
 
 	public GameObject commander;
 	public GameObject focus;
+	public GameObject laser;
+	public Vector3 offset;
 	public float expectOrders = 5.0f;
 	public float scanrange = 10.0f;
+	
 
 	private bool fireMode = false;
 
@@ -18,13 +21,26 @@ public class FighterStateMachine : MonoBehaviour {
 	void Start () {
 		StartCoroutine(DetermineOrders());
 		StartCoroutine(DetermineManeuvers());
+		StartCoroutine(FireCannons());
 	}
 	
 	// Update is called once per frame
 	void Update () {
-	
+		
 	}
 
+	IEnumerator FireCannons() {
+		while (true) {
+
+			if (fireMode) {
+				//Fire a laser
+				Vector3 pos = new Vector3(gameObject.transform.position.x + offset.x, gameObject.transform.position.y + offset.y, gameObject.transform.position.z + offset.z);
+				Instantiate(laser, pos, Quaternion.LookRotation(gameObject.transform.forward));
+			}
+
+			yield return new WaitForSeconds(0.6f);
+		}
+	}
 
 	IEnumerator DetermineOrders() {
 		while (true) {
@@ -49,7 +65,7 @@ public class FighterStateMachine : MonoBehaviour {
 			}
 			else {
 				//Use the commands issued by the commander.
-				if (commander == this) {
+				if (commander == gameObject) {
 					gameObject.GetComponent<CommanderBehaviour>().ScanForEnemies();
 				}
 			}
@@ -84,7 +100,7 @@ public class FighterStateMachine : MonoBehaviour {
 				gameObject.GetComponent<AIThrottleController>().RaiseThrottle();
 			}
 			else if (focus.tag == "unionist" || focus.tag == "rider") {
-				if (Vector3.Distance(gameObject.transform.position, focus.transform.position) > 2.0f && Vector3.Distance(gameObject.transform.position, focus.transform.position) < 6.0f) {
+				if (Vector3.Distance(gameObject.transform.position, focus.transform.position) > 2.0f && Vector3.Distance(gameObject.transform.position, focus.transform.position) < 8.0f) {
 					SetFireMode(true);
 				}
 				else {
@@ -100,18 +116,12 @@ public class FighterStateMachine : MonoBehaviour {
 				}
 			}
 
-			//Look at the object selected
-			//This is a rather clumsy way of doing it, admittedly.
+
 			gameObject.transform.LookAt(focus.transform.position);
 
 
 			yield return new WaitForSeconds(3.0f);
 		}
-	}
-
-
-	public void SetFireMode(bool mode) {
-		fireMode = mode;
 	}
 
 
@@ -127,11 +137,22 @@ public class FighterStateMachine : MonoBehaviour {
 			tempList = GameObject.FindGameObjectsWithTag("unionist");
 		}
 
+		//Debug code
+		/*foreach (GameObject enemy in tempList) {
+			Debug.Log(enemy.name);
+		}*/
+		
+
 		foreach (GameObject ship in tempList) {
 			if (Vector3.Distance(gameObject.transform.position, ship.transform.position) < 10.0f) {
 				enemies.Add(ship);
 			}
 		}
+
+		//Debug
+		/*foreach (GameObject enemy in enemies) {
+			Debug.Log(enemy.name);
+		}*/
 
 		return enemies;
 	}
@@ -142,5 +163,9 @@ public class FighterStateMachine : MonoBehaviour {
 
 	public GameObject GetFocus() {
 		return focus;
+	}
+
+	public void SetFireMode(bool mode) {
+		fireMode = mode;
 	}
 }

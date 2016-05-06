@@ -638,6 +638,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   commander: {fileID: 0}
   focus: {fileID: 0}
+  laser: {fileID: 177356, guid: 8327740a310028a4fa2da29369155e31, type: 2}
+  offset: {x: 0, y: 0, z: 0}
   expectOrders: 5
   scanrange: 10
 --- !u!114 &11448944
